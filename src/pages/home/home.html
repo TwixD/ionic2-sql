@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic 2 SQL
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <br>
+  <div style="text-align:center;font-size:large">Shopping list</div>
+  <br>
+
+  <button ion-button color="primary" (click)="add()">Add</button>
+  <p>{{addMessage}}</p>
+  <br>
+  <button ion-button color="secondary" (click)="get()">Get</button>
+  <p>{{getMessage}}</p>
+  <br>
+  <button ion-button color="danger" (click)="remove()">Remove</button>
+  <p>{{removeMessage}}</p>
+
 </ion-content>
